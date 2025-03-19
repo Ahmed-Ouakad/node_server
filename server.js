@@ -9,14 +9,11 @@ app.get("/get", (req, res) => {
   res.send("Hello, World! 🚀 Your server is running! it's from ahmed and this is the get route");
 });
 app.post("/echo", (req, res) => {
-  const { from, to } = req.body;
-  if (!from || !to) {
-    return res.status(400).json({ error: "Both 'from' and 'to' fields are required!" });
-  }
+  
   res.json({
     message: "Data received successfully!",
-    from: from,
-    to: to,
+    from: "12323",
+    to: "0000",
     test: false,
   });
 });
