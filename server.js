@@ -10,16 +10,14 @@ app.get("/get", (req, res) => {
 });
 app.post("/echo", (req, res) => {
   const { from, to } = req.body;
-
   if (!from || !to) {
     return res.status(400).json({ error: "Both 'from' and 'to' fields are required!" });
   }
-
   res.json({
     message: "Data received successfully!",
     from: from,
     to: to,
-    test : false,
+    test: false,
   });
 });
 app.listen(PORT, () => {
