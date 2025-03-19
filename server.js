@@ -16,6 +16,7 @@ app.post("/echo", (req, res) => {
     message: "Data received successfully!",
     from: from,
     to: to,
+    test : false,
   });
 });
 app.listen(PORT, () => {
