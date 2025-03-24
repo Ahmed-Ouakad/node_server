@@ -14,7 +14,10 @@ app.post("/echo", (req, res) => {
     message: "Data received successfully!",
     from: "12323",
     to: "0000",
-    test: false,
+    welcomeMessageEnabled: true,
+    welcomeMessage : "Bonjour, bienvenu dans notre entreprise",
+    hasBlackList : false,
+    voicemail : true
   });
 });
 app.listen(PORT, () => {
